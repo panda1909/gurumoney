@@ -27,20 +27,12 @@
             <div class="navbar-nav">
               <a class="nav-item nav-link active" href="#home">Home</a>
               <a class="nav-item nav-link" href="#services">Services</a>
-              <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-              <a class="nav-item nav-link" href="#testimonial">Testimonial</a>
-              <a class="nav-item nav-link" href="#team">Team</a>
-              <a class="nav-item nav-link" href="#pricing">Pricing</a>
+              <a class="nav-item nav-link" href="#portfolio">Converter</a>
+              <a class="nav-item nav-link" href="#testimonial">Testimonials</a>
+              <a class="nav-item nav-link" href="#team">Why US</a>
               <a class="nav-item nav-link" href="#blogs">News</a>
               <a class="nav-item nav-link" href="#contact_us">Contact Us</a>
-              <div class="drop_down">
-                <a class="nav-item nav-link" href="#">pages <i class="fas fa-caret-down"></i></a>
-                <div class="animated fadeInUp sub_menu">
-                  <a class="nav-item nav-link" href="about-us.html">About us</a>
-                  <a class="nav-item nav-link" href="blogs.html">Blogs</a>
-                  <a class="nav-item nav-link" href="blog.html">Single Blog</a>
-                  <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                </div>
+              
               </div>
             </div>
           </div>
@@ -57,10 +49,8 @@
           <div class="row align-items-center">
             <div class="col-md-12 col-lg-6 padding_right">
               <div class="hero_content">
-                <h1 class="text-uppercase hero_tit text_animation" data-in-effect="bounceIn">START YOUR BUSINESS WITH ZAGENCY</h1>
-                <p class="hero_desc wow fadeInDown" data-wow-delay="1.5s">Lorem Ipsum
-                  is simply dummy text of the printing and typesetting industry.Lorem
-                  Ipsum has been the industry's standard dummy text ever since the 1500s
+                <h1 class="text-uppercase hero_tit text_animation" data-in-effect="bounceIn">START DOING YOUR EXCHANGES WITH GURUEXHANGE</h1>
+                <p class="hero_desc wow fadeInDown" data-wow-delay="1.5s">We are the safest and most secure currency exchange provider in town.
                 </p>
               </div>
             </div>
@@ -75,12 +65,12 @@
       <!--========== start services section =============-->
       <section id="services" class="text-center blue">
         <div class="container">
-      <div class="tradingview-widget-container">   
-      <div class="tradingview-widget-container__widget">
-      </div>   
-      <div class="tradingview-widget-copyright">
-      <a href="https://tr.tradingview.com" _fcksavedurl="https://tr.tradingview.com" rel="noopener" target="_blank">
-      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+          <div class="tradingview-widget-container">   
+            <div class="tradingview-widget-container__widget">
+            </div>   
+          <div class="tradingview-widget-copyright">
+      <a href="https://tr.tradingview.com" _fcksavedurl="https://tr.tradingview.com" rel="noopener" target="_blank"></a>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
   {
   "symbols": [
     {
@@ -116,31 +106,28 @@
             <div class="col-md-12 col-lg-6">
               <div class="about_image wow fadeInLeft">
                 <img class="w-100" src="{% static 'img/about-us.jpg'%}" alt="pic">
-                <a id="play_video" href="#">
+                {% comment %} <a id="play_video" href="#">
                   <i class="fas fa-play paly_icon text_green"></i>
-                </a>
+                </a> {% endcomment %}
               </div>
-              <div class="video_popup animated fadeInUp justify-content-center align-items-center align-content-center">
+              {% comment %} <div class="video_popup animated fadeInUp justify-content-center align-items-center align-content-center">
                 <div class="video_src">
                   <div class="iframe_src">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/tiy1MeXzhfA" allowfullscreen></iframe>
                   </div>
                 </div>
-              </div>
+              </div> {% endcomment %}
             </div>
             <div class="col-md-12 col-lg-6">
               <div class="about_content padding_left_4 wow fadeInRight">
                 <h2 class="text-uppercase">what we do ?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed
-                  eiusmod tempor enim minim veniam quis notru exercit ation Lorem
-                  ipsum dolor sit amet.Veniam quis notru exercit.
+                <p>We are the safest and fastest growing Currency exchange provider around, With more than 200,000+ Customers and 400,000+ Transactions under our belt.
                 </p>
                 <ul class="margin_top">
-                  <li><i class="fas fa-circle _icon text_green margin_right"></i>Lorem ipsum dolor sit amet consectetur</li>
-                  <li><i class="fas fa-circle _icon text_green margin_right"></i>Lorem ipsum dolor sit amet consectetur</li>
-                  <li><i class="fas fa-circle _icon text_green margin_right"></i>Lorem ipsum dolor sit amet consectetur</li>
+                  <li><i class="fas fa-circle _icon text_green margin_right"></i>Accurate Converson Rates.</li>
+                  <li><i class="fas fa-circle _icon text_green margin_right"></i>Safe and Secure Transactions.</li>
+                  <li><i class="fas fa-circle _icon text_green margin_right"></i>Least Buying and Selling Margins.</li>
                 </ul>
-                <a class="d-inline-block btn_style btn_green margin_top" href="about-us.html">Now More</a>
               </div>
             </div>
           </div>
@@ -150,7 +137,7 @@
       <section id="portfolio" class="text-center blue">
         <div class="container">
           <h1 class="sec_title text-uppercase">Currency Converter</h1>
-          <p class="sec_desc">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
+          <p class="sec_desc">Try our real time currency converter with over 200 currencies, These values are updated in real time according to market changes.</p>
           {% include 'converter.html' %}
         </div>
       </section>
@@ -161,52 +148,43 @@
             <div class="col-md-6 col-lg-3">
               <div class="counter_data text-center">
                 <i class="fas fa-users text_green counter_icon"></i>
-                <h2 class="counter_value">200</h2>
+                <h2 class="counter_value">200000</h2>
                 <h3 class="text-uppercase counter_tit">Happy Clients</h3>
               </div>
               <div class="counter_data text-center">
                 <i class="fas fa-project-diagram text_green counter_icon"></i>
-                <h2 class="counter_value">300</h2>
-                <h3 class="text-uppercase counter_tit">Projects</h3>
+                <h2 class="counter_value">400000</h2>
+                <h3 class="text-uppercase counter_tit">Conversion/Trades</h3>
               </div>
             </div>
             <div class="col-md-6 col-lg-3">
-              <div class="counter_data text-center">
+              {% comment %} <div class="counter_data text-center">
                 <i class="fas fa-calendar-alt text_green counter_icon"></i>
                 <h2 class="counter_value">20</h2>
                 <h3 class="text-uppercase counter_tit">events</h3>
-              </div>
+              </div> {% endcomment %}
             </div>
             <div class="col-md-12 col-lg-6">
               <div class="clients_desc">
                 <h2 class="text-uppercase">WHAT CLIENTS SAY</h2>
-                <p class="client_opinion">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
-                  tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor
-                  sit amet.Veniam quis notru exercit.</p>
+                <p class="client_opinion">We have a 200,000+ client base, who make currency exchanges at our retails on a weekly basis.Hear what some of our regular clients have to say about us.</p>
               </div>
               <div id="clients_slider" class="owl-carousel blue">
                 <div class="client_item">
-                  <p class="client_opinion">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
-                    tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor
-                    sit amet.Veniam quis notru exercit.</p>
+                  <p class="client_opinion">I recieve money from my father abroad and exchanges at their location is very easy, fast and secure.</p>
                   <div class="d-flex align-items-center">
                     <img class="client_image" src="{% static 'img/client1.jpg'%}" alt="pic">
                     <h3 class="client_name text-capitalize">Nagy el.saied</h3>
                   </div>
                 </div>
                 <div class="client_item">
-                  <p class="client_opinion">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
-                    tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor
-                    sit amet.Veniam quis notru exercit.</p>
+                  <p class="client_opinion">I need to echange money on a regular basis almost and these guys are really helpful and hardworking.</p>
                   <div class="d-flex align-items-center">
-                    <img class="client_image" src="{% static 'img/client2.jpg'%}" alt="pic">
-                    <h3 class="client_name text-capitalize">perla mohammed</h3>
+                    <h3 class="client_name text-capitalize">Lee Hueng</h3>
                   </div>
                 </div>
                 <div class="client_item">
-                  <p class="client_opinion">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
-                    tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor
-                    sit amet.Veniam quis notru exercit.</p>
+                  <p class="client_opinion">I have had the best working experience with these guys.</p>
                   <div class="d-flex align-items-center">
                     <img class="client_image" src="{% static 'img/client3.jpg'%}" alt="pic">
                     <h3 class="client_name text-capitalize">ali essa</h3>
@@ -220,86 +198,46 @@
       <!--========== start Team section =============-->
       <section id="team" class="blue text-center">
         <div class="container">
-          <h1 class="text-uppercase">OUR LOVELY TEAM</h1>
-          <p class="sec_desc">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
-            tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor
-            sit amet.Veniam quis notru exercit.</p>
+          <h1 class="text-uppercase">Why Us</h1>
+          <p class="sec_desc">Select to do your Business with the most trusted exchangers around.</p>
           <div id="team_slider" class="owl-carousel blue margin_top_4">
             <div class="team_item">
               <div class="pic">
                 <img class="w-100" src="{% static 'img/client1.jpg'%}" alt="pic">
-                  <ul class="social-links d-flex">
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  </ul>
+                  
               </div>
               <div class="team-content">
-                <h3 class="title text-uppercase">Nagy noor</h3>
-                <span class="post text-capitalize">web developer</span>
+                <span class="post text-capitalize">Safe transactions</span>
               </div>
             </div>
             <div class="team_item">
               <div class="pic">
                 <img class="w-100" src="{% static 'img/client2.jpg'%}" alt="pic">
-                <ul class="social-links d-flex">
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                </ul>
+               
               </div>
               <div class="team-content">
-                <h3 class="title text-uppercase">perrla mohammed</h3>
-                <span class="post text-capitalize">web designer</span>
+                <span class="post text-capitalize">Accurate Rates</span>
               </div>
             </div>
             <div class="team_item">
               <div class="pic">
                 <img class="w-100" src="{% static 'img/client3.jpg'%}" alt="pic">
-                <ul class="social-links d-flex">
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                </ul>
+                
               </div>
               <div class="team-content">
-                <h3 class="title text-uppercase">tamer ahmed</h3>
-                <span class="post text-capitalize">social media</span>
+                <span class="post text-capitalize">Real Time updates</span>
               </div>
             </div>
             <div class="team_item">
               <div class="pic">
                 <img class="w-100" src="{% static 'img/client4.jpg'%}" alt="pic">
-                <ul class="social-links d-flex">
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                </ul>
+                
               </div>
               <div class="team-content">
-                <h3 class="title text-uppercase">Williamson</h3>
-                <span class="post text-capitalize">ui/ux designer</span>
+                <span class="post text-capitalize">Currency Legitemacy Security</span>
               </div>
             </div>
-            <div class="team_item">
-              <div class="pic">
-                <img class="w-100" src="{% static 'img/client2.jpg'%}" alt="pic">
-                <ul class="social-links d-flex">
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                </ul>
-              </div>
-              <div class="team-content">
-                <h3 class="title text-uppercase">perrla mohammed</h3>
-                <span class="post text-capitalize">web designer</span>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -307,60 +245,48 @@
       <!--========== start blogs section =============-->
       <section id="blogs">
         <div class="container">
-          <h1 class="text-center text-uppercase">latest news</h1>
-          <p class="sec_desc text-center">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
-            tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor
-            sit amet.Veniam quis notru exercit.</p>
+          <h1 class="text-center text-uppercase">Latest news</h1>
+          <p class="sec_desc text-center">Keep in touch with the latest news from us to avoid any inconvenience.</p>
           <div class="row margin_top_4 align-items-center">
             <div class="col-md-12 col-lg-8">
               <div class=" blog_item">
-                <a href="blog.html">
                   <div class="blog_img">
                     <img class="w-100" src="{% static 'img/portfolio1.jpg'%}" alt="pic">
                   </div>
                   <div class="blog_content d-flex align-items-end text-white">
                     <div>
-                      <h3 class="text-uppercase">how to be effective in working remotely</h3>
-                      <p class="text_small animated fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
-                        tempor enim minim veniam quis notru</p>
+                      <h3 class="text-uppercase">Beware, We only have One location that is attached below. </h3>
+                      <p class="text_small animated fadeInUp">Beware, We only have One location that is attached below.</p>
                     </div>
                   </div>
-                </a>
               </div>
             </div>
             <div class="col-md-12 col-lg-4">
               <div class=" blog_item margin_bottom">
-                <a href="blog.html">
                   <div class="blog_img">
                     <img class="w-100" src="{% static 'img/portfolio2.jpg'%}" alt="pic">
                   </div>
                   <div class="blog_content d-flex align-items-end text-white">
                     <div>
-                      <h3 class="text-uppercase">personal finance planning</h3>
-                      <p class="text_small animated fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
+                      <h3 class="text-uppercase">We have recently made our 400,000 th transaction.</h3>
+                      <p class="text_small animated fadeInUp">We have recently made our 400,000 th transaction.
                       </p>
                     </div>
                   </div>
-                </a>
               </div>
               <div class=" blog_item">
-                <a href="blog.html">
                   <div class="blog_img">
                     <img class="w-100" src="{% static 'img/portfolio3.jpg'%}" alt="pic">
                   </div>
                   <div class="blog_content d-flex align-items-end text-white">
                     <div>
-                      <h3 class="text-uppercase">best ui / ux Designs</h3>
-                      <p class="text_small animated fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
+                      <h3 class="text-uppercase">Get in Touch</h3>
+                      <p class="text_small animated fadeInUp">Get in touch to learn about our social outreach program.
                       </p>
                     </div>
                   </div>
-                </a>
               </div>
             </div>
-          </div>
-          <div class="text-center margin_top_4">
-            <a class="d-inline-block btn_style blu_grad_btn text-uppercase" href="blogs.html">show more</a>
           </div>
         </div>
       </section>
@@ -434,7 +360,7 @@
     <!--========== start footer section =============-->
     <footer class="site_footer text-center bg_blue_grad text-white">
       <div class="container">
-        <p>ZAGENCY © 2016 All Rights Reserved.</p>
+        <p>GURUEXHANGE © 2021 All Rights Reserved.</p>
       </div>
     </footer>
     <script src="{% static 'js/jQuery-plugins.js'%}"></script>
